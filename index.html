@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title> Matrices Calculator </title>
+</head>
+<body>
+
+    <h1> Matrices Sum Calculator </h1>
+     <form  onsubmit="start() ; return false ;">
+        <input type="number" id="matGen1">X
+        <input type="number" id="matGen2">
+        <br>
+        
+      <select name="" id="checksign" required>
+      <option value="select"> ADD "+" </option>
+      
+      </select>
+    
+      <button type="submit"> BOXES SUM </button>
+
+    </form>
+
+
+    
+    <form action="" onsubmit="cal(); return false">
+     <div id="matInput">
+       <div id="mat1"> </div>
+
+       <div> <h1 id="dropDown"></h1> </div>
+
+       <div id="mat2"></div>
+
+       <div> <h1 id="equal"></h1> </div>
+
+       <div id="result"></div>
+     </div>
+     <button type="submit">ANSWER</button>
+       
+    </form>
+
+    <script src="app.js"></script>
+
+
+</body>
+</html>
