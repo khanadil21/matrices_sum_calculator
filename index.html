@@ -4,46 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title> Matrices Calculator </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:1024px)" href="laptop.css">
+    <title>Document</title>
 </head>
 <body>
+    <header>
+        <h1>Matrix Addition App</h1>
+    </header>
 
-    <h1> Matrices Sum Calculator </h1>
-     <form  onsubmit="start() ; return false ;">
-        <input type="number" id="matGen1">X
-        <input type="number" id="matGen2">
-        <br>
-        
-      <select name="" id="checksign" required>
-      <option value="select"> ADD "+" </option>
-      
-      </select>
+
+    <form onsubmit="start(); return false"; id="form1">
+    <div class="box">
+       <div class="sep"><label for="input_1">No. of Rows :</label> <input type="number" required id="input_1" placeholder="2" min="2" max="10"></div>
+       <div class="sep"><label for="input_2">No. of Columns : </label> <input type="number" required id="input_2" placeholder="2" min="2" max="10"></div>
+       <button type="submit" class="btn"  id="btn1">Start</button>
+    </div>
     
-      <button type="submit"> BOXES SUM </button>
-
     </form>
 
 
-    
-    <form action="" onsubmit="cal(); return false">
-     <div id="matInput">
-       <div id="mat1"> </div>
+    <form onsubmit="calc(); return false"; id="form2">
 
-       <div> <h1 id="dropDown"></h1> </div>
-
-       <div id="mat2"></div>
-
-       <div> <h1 id="equal"></h1> </div>
-
-       <div id="result"></div>
-     </div>
-     <button type="submit">ANSWER</button>
-       
+        <div class="matBox">
+            <div id="mat_1" class="matrix"></div>
+            <h1>+</h1>
+            <div id="mat_2" class="matrix"></div>
+            <h1>=</h1>
+            <div id="result" class="matrix"></div>
+        </div>
+        <button type="submit" class="btn">Calculate</button>
     </form>
+
 
     <script src="app.js"></script>
-
 
 </body>
 </html>
